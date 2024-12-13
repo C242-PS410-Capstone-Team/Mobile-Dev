@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.capstone.ecosense">
+
+    <!-- Izin untuk mengakses lokasi perangkat -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Izin untuk menggunakan internet (untuk mengakses peta) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+        <!-- Deklarasi aktivitas untuk SplashActivity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Deklarasi aktivitas untuk MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- Deklarasi aktivitas untuk MapsFragment (gunakan fragment atau activity sesuai dengan implementasi) -->
+        <activity
+            android:name=".MapsFragment"
+            android:exported="false"
+            android:label="Google Maps"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable" />
+
+        <!-- Deklarasi aktivitas untuk SettingsFragment -->
+        <activity
+            android:name=".SettingFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <!-- Deklarasi aktivitas untuk Documentation Fragment -->
+        <activity
+            android:name=".DocFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <!-- Menyertakan API Key untuk Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDhhPQ28U2ZMyeonVPgIHYYNKqOLqI9Bys" /> <!-- Ganti dengan API Key Anda -->
+
+    </application>
+</manifest>
