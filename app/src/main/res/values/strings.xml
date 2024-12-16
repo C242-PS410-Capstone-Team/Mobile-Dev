@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">EcoSense</string>
+    <string name="loading_text">Loading</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="location">Semarang, Jawa Tengah</string>
+    <string name="date">Tanggal</string>
+    <string name="average_ndvi">Average NDVI</string>
+    <string name="ndvi_value">0.45</string>
+    <string name="average_carbon_stock">Avg Carbon Stock</string>
+    <string name="carbon_stock_value">12.3 Mg/Ha</string>
+    <string name="map_description">Peta kondisi lingkungan berdasarkan klasifikasi NDVI dan karbon</string>
+    <string name="input_data_header">Input Data (kota/kabupaten, TIF, CSV)</string>
+    <string name="input_city_hint">Masukkan nama kota/kabupaten</string>
+    <string name="input_tif">Input TIF</string>
+    <string name="input_csv">Input CSV</string>
+    <string name="upload">Upload</string>
+    <string name="submit">Submit</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="language">Bahasa</string>
+    <string name="notifications">Notifikasi</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="about_app">Tentang Aplikasi</string>
+    <string name="version">Versi: 1.0.0</string>
+    <string name="developed_by">Dikembangkan oleh: Yes,Sir Team</string>
+
+    <string name="title">Jenis data berdasarkan NDVI</string>
+    <string name="description">Berdasarkan data NDVI atau kerapatan vegetasi, kita dapat mengelompokkan lahan menjadi beberapa jenis</string>
+
+    <string name="land_developed">Lahan Terbangun</string>
+    <string name="land_developed_desc">Merujuk pada area yang sudah dikembangkan untuk infrastruktur seperti bangunan, jalan, kawasan industri, atau permukiman...</string>
+
+    <string name="land_empty">Lahan Kosong</string>
+    <string name="land_empty_desc">Area yang tidak ditanami atau digunakan untuk kegiatan apapun, biasanya berupa tanah terbuka tanpa vegetasi...</string>
+
+    <string name="land_water">Air</string>
+    <string name="land_water_desc">Wilayah perairan seperti danau, sungai, waduk, dan laut. Area ini penting untuk mendukung kehidupan dan ekosistem di sekitarnya.</string>
+
+    <string name="land_swamp">Rawa</string>
+    <string name="land_swamp_desc">Area berair yang biasanya ditumbuhi vegetasi khas rawa. Rawa sering kali menjadi habitat penting bagi keanekaragaman hayati dan berfungsi sebagai penampung air alami.</string>
+
+    <string name="land_shrub">Semak</string>
+    <string name="land_shrub_desc">Wilayah yang didominasi oleh vegetasi semak atau tanaman pendek. Biasanya merupakan area peralihan antara lahan terbuka dan hutan, atau area yang baru mulai mengalami regenerasi vegetasi.</string>
+
+    <string name="land_dry_rice">Sawah Kering</string>
+    <string name="land_dry_rice_desc">Sawah yang ditanami padi atau tanaman lainnya tetapi tidak bergantung sepenuhnya pada pengairan dari irigasi, melainkan hujan.</string>
+
+    <string name="land_wet_rice">Sawah Basah</string>
+    <string name="land_wet_rice_desc">Sawah yang ditanami padi dengan pengairan intensif, biasanya menggunakan sistem irigasi atau penggenangan.</string>
+
+    <string name="land_plantation">Perkebunan</string>
+    <string name="land_plantation_desc">Area yang digunakan untuk budidaya tanaman perkebunan seperti kelapa sawit, teh, kopi, karet, atau tanaman lainnya yang dikelola secara komersial.</string>
+
+    <string name="land_forest">Hutan</string>
+    <string name="land_forest_desc">Kawasan yang dipenuhi vegetasi pohon dengan kerapatan tertentu. Hutan berfungsi sebagai penyedia oksigen, penyerap karbon, dan habitat berbagai flora dan fauna.</string>
+
+    <string name="caution_title">Apa itu NDVI?</string>
+    <string name="caution_desc">NDVI adalah indeks vegetasi yang membantu memantau kesehatan tanaman. Nilai lebih tinggi menunjukkan vegetasi yang lebih sehat.</string>
+    <string name="caution_info">Pelajari lebih lanjut</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
