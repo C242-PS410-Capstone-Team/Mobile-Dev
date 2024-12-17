@@ -47,6 +47,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("org.apache.commons:commons-imaging:1.0-alpha3")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.firebase.storage.ktx)
     testImplementation(libs.junit)
