@@ -186,7 +186,7 @@ class HomeFragment : Fragment() {
     }
 
     /**
-     * Opens the file picker based on the MIME type
+      Opens the file picker based on the MIME type
      */
     private fun openFilePicker(mimeType: String) {
         val intent = Intent(Intent.ACTION_GET_CONTENT).apply {
