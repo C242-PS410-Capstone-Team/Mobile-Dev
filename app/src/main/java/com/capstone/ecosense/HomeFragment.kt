@@ -58,6 +58,7 @@ class HomeFragment : Fragment() {
     // Request Codes for File Picker
     private val TIFF_REQUEST_CODE = 1
     private val CSV_REQUEST_CODE = 2
+    private val FILE_REQUEST_CODE = 3
 
     // Progress Dialog
     private lateinit var progressDialog: ProgressDialog
@@ -189,7 +190,7 @@ class HomeFragment : Fragment() {
      */
     private fun openFilePicker(mimeType: String) {
         val intent = Intent(Intent.ACTION_GET_CONTENT).apply {
-            type = mimeType
+            type = "*/*"
             addCategory(Intent.CATEGORY_OPENABLE)
         }
         startActivityForResult(
@@ -337,7 +338,13 @@ class HomeFragment : Fragment() {
      * @param callback Callback indicating success or failure
      */
     private fun postToProcessApi(cityName: String, tiffFileName: String, csvFileName: String, callback: (Boolean) -> Unit) {
-        val client = OkHttpClient()
+        // OkHttpClient dengan timeout diperpanjang
+        val client = OkHttpClient.Builder()
+            .connectTimeout(60, java.util.concurrent.TimeUnit.SECONDS) // Timeout koneksi
+            .readTimeout(60, java.util.concurrent.TimeUnit.SECONDS)    // Timeout membaca respons
+            .writeTimeout(60, java.util.concurrent.TimeUnit.SECONDS)   // Timeout menulis permintaan
+            .build()
+
         val jsonObject = JSONObject().apply {
             put("tif_filename", tiffFileName)
             put("csv_filename", csvFileName)
@@ -376,7 +383,6 @@ class HomeFragment : Fragment() {
             }
         })
     }
-
     /**
      * Posts data to the /convert_to_png API endpoint
      * @param cityName Name of the city
