@@ -175,6 +175,15 @@ class HomeFragment : Fragment() {
                 Glide.with(requireContext())
                     .load(urlNdviPng)
                     .into(carbonImageView)
+
+                // Set click listeners for fullscreen images
+                ndviImageView.setOnClickListener {
+                    FullscreenImageActivity.startWithUrl(requireContext(), urlFinalPng)
+                }
+
+                carbonImageView.setOnClickListener {
+                    FullscreenImageActivity.startWithUrl(requireContext(), urlNdviPng)
+                }
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
